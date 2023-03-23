@@ -1,5 +1,6 @@
 require('dotenv').config();
-// async errors
+// This package saves me from having to wrap every controller on a try/catch, and all I need to do is throw an error
+require('express-async-errors');
 
 const express = require('express');
 const app = express();
